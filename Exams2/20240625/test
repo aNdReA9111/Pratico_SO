@@ -1,0 +1,8 @@
+/bin/cat
+cat
+/etc/hostname
+
+/bin/ls
+ls
+-l
+/tmp
