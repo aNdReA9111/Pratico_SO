@@ -74,6 +74,15 @@ def get_file_size(file_path):
         print(f"Error: {e}")
         return None
 
+    def concatenate_files(file1, file2):
+        try:
+            with open(file1, "a") as f1, open(file2, "r") as f2:
+                content = f2.read()
+                f1.write(content)
+            return True
+        except Exception as e:
+            print(f"Error: {e}")
+            return False
 
 # Testo le funzioni del modulo
 if __name__ == "__main__":
