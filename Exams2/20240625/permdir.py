@@ -9,7 +9,6 @@ if __name__ == "__main__":
     
     ls_output = sub.run(["ls", "-l", path], capture_output=True, text=True).stdout.split("\n")
     for i in range(1, len(ls_output)-1):
-        
         entry = ls_output[i].split(" ")
         print(entry)
         
